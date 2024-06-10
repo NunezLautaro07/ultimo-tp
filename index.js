@@ -36,7 +36,7 @@ app.post('/series', async (req, res) => {
   }
 });
 
-app.get('/series', async (req, res) => {
+app.get('/', async (req, res) => {
   try {
     const series = await Serie.find();
     res.json(series);
